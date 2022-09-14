@@ -16,7 +16,7 @@ Go to [here](https://visualstudio.microsoft.com/downloads/#build-tools-for-visua
 * CMake (Optional)
 
 For example:<br/>
-![MSBuild_Tools](./picture/MSBuild_Tools.png){:class="img-responsive"}
+![MSBuild_Tools](/MyBlog/assets/picture/MSBuild_Tools.png){:class="img-responsive"}
 
 ### 3. Open terminal
 After installed, you should find **Developer PowerShell for VS 2022**, click the command, get into the terminal.
