@@ -2,6 +2,8 @@
 layout: post
 title: "compile project from windows terminal"
 categories: junk
+author:
+- 
 meta: "Springfield"
 ---
 
