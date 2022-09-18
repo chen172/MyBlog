@@ -1,10 +1,6 @@
 ---
 layout: post
 title: "compile project from windows terminal"
-categories: junk
-author:
-- 
-meta: "Springfield"
 ---
 
 ### 1. Download vs_BuildTools.exe (According to the time, choose the version you need)
