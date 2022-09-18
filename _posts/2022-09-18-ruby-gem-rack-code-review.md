@@ -36,7 +36,8 @@ end
 ```use``` and ```run``` is rack method, you can find the code from [here](https://github.com/chen172/rack/blob/0b8d8394382a1d82889848b5c72531e0aa9403bf/lib/rack/builder.rb#L158) and [here](https://github.com/chen172/rack/blob/0b8d8394382a1d82889848b5c72531e0aa9403bf/lib/rack/builder.rb#L183).
 
 ### Tips
-Github automatically enable code navigation can show and link definitions of a named entity corresponding to a reference to that entity.</br>
+Github automatically enable code navigation can show and link definitions of a named entity corresponding to a reference to that entity.
+
 You can find doc from https://docs.github.com/en/repositories/working-with-files/using-files/navigating-code-on-github.
 
 ##### Troubleshooting code navigation
