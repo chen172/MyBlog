@@ -1,10 +1,6 @@
 ---
 layout: post
 title: "ruby gem rack code review"
-categories: junk
-author:
-- 
-meta: "Springfield"
 ---
 
 ### 1. test_rack_use.rb from [here](https://github.com/chen172/rack/blob/master/my_own_test/test_rack_use.rb)
