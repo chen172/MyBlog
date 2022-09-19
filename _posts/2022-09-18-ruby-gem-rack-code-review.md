@@ -26,7 +26,7 @@ end
   puts "before Middleware"
   use Middleware
   puts "after Middleware"
-  run lambda { |env| [200, {"Content-Type" => "text/plain"}, ["OK"]]}
+  run lambda { |env| [200, {"content-type" => "text/plain"}, ["OK"]]}
   ```
 
 ### 2. The meaning of ```lambda```
