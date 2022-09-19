@@ -27,4 +27,4 @@ Or you can simply go to the directory contains CMakeLists.txt , run ```cmake .``
 
 ***Note: You can get more info by ```MSBuild --help```***
 
-### Finally you get the executable file run in windows.
+### Finally you get the executable file can run in windows.
