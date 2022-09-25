@@ -27,6 +27,7 @@ The response from the API is very similar to the contents of the ```config.json`
     ]
 }
 ```
+
 ### How it serves content
 1. ```gitlab-pages``` command option ```pages-root``` specific Directory where the pages are stored, for example: ```-pages-root="shared/pages"```
 2. Gitlab domain source configuration specific the ```root path```, for example: ```"path": "myproject/myproject.gitlab.io/public/"```
