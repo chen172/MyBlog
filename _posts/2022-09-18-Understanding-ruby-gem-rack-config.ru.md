@@ -45,3 +45,4 @@ You can find doc from [github doc](https://docs.github.com/en/repositories/worki
 If code navigation is enabled for you but you don't see links to the definitions of functions and methods:
 * Code navigation only works for active branches. Push to the branch and try again.
 * Code navigation only works for repositories with fewer than 100,000 files.
+* Some language not supported.
