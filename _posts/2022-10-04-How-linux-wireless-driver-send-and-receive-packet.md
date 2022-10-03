@@ -98,7 +98,7 @@ static void virwifi_monitor_rx(struct sk_buff *skb,
 }
 ```
 
-#### About the ```netif_rx()``` function info (You can get defintion from [here](https://elixir.bootlin.com/linux/latest/source/net/core/dev.c#L4999)
+#### About the ```netif_rx()``` function info (You can get defintion from [here](https://elixir.bootlin.com/linux/latest/source/net/core/dev.c#L4999))
 It defined in ```/net/core/dev.c```
 ```c
 /**
