@@ -25,6 +25,6 @@ Or you can simply go to the directory contains CMakeLists.txt , run ```cmake .``
 * ```MSBuild MyApp.sln -p:Configuration=Release``` (Release Version)
 * ```MSBuild MyApp.sln``` (Debug Version)
 
-***Note: You can get more info by ```MSBuild --help```***
+<font color="red">Note: You can get more info by ```MSBuild --help```</font>
 
 ### Finally you get the executable file can run in windows.
