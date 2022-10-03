@@ -4,7 +4,10 @@ title: "How linux wireless driver send and receive packet"
 ---
 
 <font color="red">Note: In this blog, we just use cfg80211 kernel module</font>
-### 1. Driver receive packet from kernel network stack and send it through network device interface
+### 1. Overview
+![linux_wireless_subsytem](/MyBlog/assets/picture/linux_wireless_subsystem.png){:class="img-responsive"}
+
+### 2. Driver receive packet from kernel network stack and send it through network device interface
 Driver use callback function ```netdev_tx_t		(*ndo_start_xmit)(struct sk_buff *skb, struct net_device *dev);``` from ```struct net_device_ops``` to receive packet from 
 the network stack. The callback function need implement by the driver. for example:
 
@@ -67,7 +70,7 @@ struct net_device_ops {
 };
 ```
 
-### 2. Driver receive packet from network device interface and send it to kernel network stack
+### 3. Driver receive packet from network device interface and send it to kernel network stack
 1. The network device saves the packet in a buffer in the device’s memory.
 2. The network device raises an interrupt.
 3. The interrupt handler allocates and initializes a new socket buffer for the packet. 
