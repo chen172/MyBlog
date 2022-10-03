@@ -3,7 +3,7 @@ layout: post
 title: "How linux wireless driver send and receive packet"
 ---
 
-***Note: In this blog, we just use cfg80211 kernel module***
+<font color="red">Note: In this blog, we just use cfg80211 kernel module</font>
 ### 1. Driver receive packet from kernel network stack and send it through network device interface
 Driver use callback function ```netdev_tx_t		(*ndo_start_xmit)(struct sk_buff *skb, struct net_device *dev);``` from ```struct net_device_ops``` to receive packet from 
 the network stack. The callback function need implement by the driver. for example:
@@ -123,6 +123,6 @@ It defined in ```/net/core/dev.c```
 int netif_rx(struct sk_buff *skb)
  ```
  
- ##### reference
+ #### reference
  1. https://www.oreilly.com/library/view/understanding-the-linux/0596002130/ch18s04.html
  2. https://www.cnblogs.com/rain-blog/p/linux-wireless.html
