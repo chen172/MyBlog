@@ -74,7 +74,7 @@ struct net_device_ops {
 4. The interrupt handler copies the packet from the device’s memory to the socket buffer.
 5. The interrupt handler invokes the ```netif_rx()``` function to notify the Linux networking code that a new packet is arrived and should be processed.
 
-Here is a example of ```netif_rx()``` usage
+Here is a example of ```netif_rx()``` usage:
 ```c
 // copy skb to newskb, then send it to network stack
 static void virwifi_monitor_rx(struct sk_buff *skb,
