@@ -47,6 +47,6 @@ Run Ruby file stored under ```config/initializers``` directory from [here](https
 ### 6. Traversing all the class ancestors looking for those that respond to an initializers method
 Do railtie initializers
 
-#### Reference:
+#### reference:
 1. https://guides.rubyonrails.org/initialization.html
 2. https://guides.rubyonrails.org/configuring.html#using-initializer-files
