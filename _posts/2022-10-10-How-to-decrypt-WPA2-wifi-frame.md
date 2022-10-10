@@ -15,9 +15,7 @@ We can see there are two types of protocol, ```EAPOL and 802.11```. Acutally, ``
 #### 1. derive the PMK from the passphrase and the essid
 #### 2. derive supplicant nonce and authenticator nonce from four-way handshake(actually you just need two of the four)
 #### 3. derive the PTK(pairwise transcient keys) from a bunch of stuff
-PTK is calculated by ```PTK = PRF(PMK || ANonce || SNonce || AMAC || SMAC)```, we use ```sha1 based HMAC``` encrypt ```(PMK || ANonce || SNonce || AMAC || SMAC)``` by 
-```PMK```.
-
+PTK is calculated by ```PTK = PRF(PMK || ANonce || SNonce || AMAC || SMAC)```, we use ```sha1 based HMAC``` encrypt ```(PMK || ANonce || SNonce || AMAC || SMAC)``` by ```PMK```.
 ```c
   int i;
   unsigned char pke[100];
@@ -36,7 +34,6 @@ PTK is calculated by ```PTK = PRF(PMK || ANonce || SNonce || AMAC || SMAC)```, w
      HMAC(EVP_sha1(), pmk, 32, pke, 100, wpa->ptk + i * 20, NULL);
   }
 ```
-
 The Check if we get the right ```PTK``` by compare ```MIC(Message Integrity Code)```, correct ```MIC``` is from fourway handshake.
 Again we use ```sha1 based HMAC``` encrypt ```EAPOL data``` by ```PMK```.
 ```c
