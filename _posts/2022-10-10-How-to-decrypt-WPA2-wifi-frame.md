@@ -9,7 +9,7 @@ information. The ```data frame``` we need calls ```QoS data```, type/subtype is 
 
 ![QoS](/MyBlog/assets/picture/QoS.png){:class="img-responsive"}
 
-We can there are two types of protocol, ```EAPOL and 802.11```. Acutally, ```EAPOL``` is for fourway handshakes, ```802.11``` is for encrypted wifi data.
+We can see there are two types of protocol, ```EAPOL and 802.11```. Acutally, ```EAPOL``` is for fourway handshakes, ```802.11``` is for encrypted wifi data.
 
 ### II. decrypt WPA2 data
 #### 1. derive the PMK from the passphrase and the essid
