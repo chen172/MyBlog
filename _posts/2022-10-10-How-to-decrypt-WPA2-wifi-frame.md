@@ -12,8 +12,8 @@ information. The ```data frame``` we need calls ```QoS data```, type/subtype is 
 We can see there are two types of protocol, ```EAPOL and 802.11```. Acutally, ```EAPOL``` is for fourway handshakes, ```802.11``` is for encrypted wifi data.
 
 ### II. decrypt WPA2 data
-#### 1. derive the PMK from the passphrase and the essid
-#### 2. derive supplicant nonce and authenticator nonce from four-way handshake(actually you just need two of the four)
+#### 1. derive the PMK from the passphrase and the essid(wifi name)
+#### 2. derive supplicant nonce and authenticator nonce from four-way handshake frame(actually you just need two of the four)
 #### 3. derive the PTK(pairwise transcient keys) from a bunch of stuff
 PTK is calculated by ```PTK = PRF(PMK || ANonce || SNonce || AMAC || SMAC)```, we use ```sha1 based HMAC``` encrypt ```(PMK || ANonce || SNonce || AMAC || SMAC)``` by ```PMK```.
 ```c
