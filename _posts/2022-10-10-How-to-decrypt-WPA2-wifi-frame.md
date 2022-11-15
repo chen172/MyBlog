@@ -34,7 +34,7 @@ PTK is calculated by ```PTK = PRF(PMK || ANonce || SNonce || AMAC || SMAC)```, w
      HMAC(EVP_sha1(), pmk, 32, pke, 100, wpa->ptk + i * 20, NULL);
   }
 ```
-Then Check if we get the right ```PTK``` by compare ```MIC(Message Integrity Code)```, correct ```MIC``` is from fourway handshake.
+Then check if we get the right ```PTK``` by compare with ```MIC(Message Integrity Code)```, correct ```MIC``` is from fourway handshake.
 Again we use ```sha1 based HMAC``` encrypt ```EAPOL data``` by ```PMK```.
 ```c
 HMAC(EVP_sha1(), wpa->ptk, 16, wpa->eapol, wpa->eapol_size, mic, NULL);
